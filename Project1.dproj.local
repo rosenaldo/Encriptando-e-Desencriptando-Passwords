@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+  <Transactions>
+    <Transaction>2021/02/27 20:19:06.959,=C:\Users\jrose\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2021/02/27 20:35:37.489,C:\Users\jrose\Documents\Encriptando-e-Desencriptando-Passwords\Unit1.dfm=C:\Users\jrose\Documents\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>2021/02/27 20:35:37.489,C:\Users\jrose\Documents\Encriptando-e-Desencriptando-Passwords\Unit1.pas=C:\Users\jrose\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2021/02/27 20:35:39.001,C:\Users\jrose\Documents\Encriptando-e-Desencriptando-Passwords\Project1.dproj=C:\Users\jrose\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+  </Transactions>
+</BorlandProject>
