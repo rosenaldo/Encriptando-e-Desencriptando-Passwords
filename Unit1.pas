@@ -11,14 +11,12 @@ type
   TForm1 = class(TForm)
     Panel1: TPanel;
     Button1: TButton;
-    Button2: TButton;
     Edit1: TEdit;
     Edit2: TEdit;
     procedure Button1Click(Sender: TObject);
-    procedure Button2Click(Sender: TObject);
+    procedure FormKeyDown(Sender: TObject; var Key: Word; Shift: TShiftState);
   private
     function Encode(Texto: string): string;
-    function Decode(Texto: string): string;
     { Private declarations }
   public
     { Public declarations }
@@ -40,35 +38,9 @@ begin
 
 end;
 
-procedure TForm1.Button2Click(Sender: TObject);
-begin
-  Edit1.Text := '';
-  Edit1.Text := Decode(Edit2.Text);
-  Edit2.Text := '';
-end;
-
-function TForm1.Decode(Texto: string): string;
-const
-  AlfaNumerico: string = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
-var
-  i, x: Integer;
-begin
-  Texto := UpperCase(Texto);
-  for i := 1 to Length(Texto) do
-    if (Pos(Texto[i], AlfaNumerico) <> 0) then
-    begin
-      x := Pos(Texto[i], AlfaNumerico) + 1;
-      if (x >= 23) then
-        x := 1;
-      Texto[i] := AlfaNumerico[x];
-    end;
-  Result := Texto;
-
-end;
-
 function TForm1.Encode(Texto: string): string;
 const
-  AlfaNumerico: string = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+  AlfaNumerico: string = 'A1B2C3D4E5F6G7H8I9J1K2L3M4N5O6P7Q8R9S1T2U3V4W5X6Y7Z';
 var
   i, x: Integer;
 begin
@@ -83,6 +55,13 @@ begin
     end;
   Result := Texto;
 
+end;
+
+procedure TForm1.FormKeyDown(Sender: TObject; var Key: Word;
+  Shift: TShiftState);
+begin
+  if Key = 13 then
+    Button1Click(self);
 end;
 
 end.

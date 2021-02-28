@@ -1,57 +1,51 @@
 object Form1: TForm1
   Left = 0
   Top = 0
-  Caption = 'Form1'
-  ClientHeight = 277
-  ClientWidth = 539
+  BorderIcons = [biSystemMenu]
+  ClientHeight = 133
+  ClientWidth = 303
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
   Font.Height = -11
   Font.Name = 'Tahoma'
   Font.Style = []
+  KeyPreview = True
   OldCreateOrder = False
+  OnKeyDown = FormKeyDown
   PixelsPerInch = 96
   TextHeight = 13
   object Panel1: TPanel
     Left = 0
     Top = 0
-    Width = 539
-    Height = 277
+    Width = 303
+    Height = 133
     Align = alClient
     TabOrder = 0
-    ExplicitLeft = 8
+    ExplicitTop = 8
+    ExplicitWidth = 439
     object Button1: TButton
-      Left = 352
-      Top = 40
+      Left = 168
+      Top = 90
       Width = 97
       Height = 33
-      Caption = 'Button1'
+      Caption = 'Encriptar '
       TabOrder = 0
       OnClick = Button1Click
     end
-    object Button2: TButton
-      Left = 352
-      Top = 79
-      Width = 97
-      Height = 33
-      Caption = 'Button2'
-      TabOrder = 1
-      OnClick = Button2Click
-    end
     object Edit1: TEdit
-      Left = 48
-      Top = 24
+      Left = 16
+      Top = 18
+      Width = 241
+      Height = 21
+      TabOrder = 1
+    end
+    object Edit2: TEdit
+      Left = 16
+      Top = 63
       Width = 241
       Height = 21
       TabOrder = 2
-    end
-    object Edit2: TEdit
-      Left = 48
-      Top = 85
-      Width = 241
-      Height = 21
-      TabOrder = 3
     end
   end
 end
